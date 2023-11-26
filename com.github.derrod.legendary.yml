@@ -1,0 +1,22 @@
+app-id: com.github.derrod.legendary
+version: 0.20.33
+runtime: org.gnome.Platform
+runtime-version: "45"
+sdk: org.gnome.Sdk
+command: legendary
+finish-args: # flatpak permissions
+  - --device=all # needed for OpenGL, gamepads and serial/parallel
+  - --share=ipc # needed for X11
+  - --share=network # Needed for IPX and serial over TCP/IP
+  - --socket=x11 # default to X11, as Gnome does not provide SSD
+  - --socket=wayland
+  - --socket=pulseaudio
+  - --filesystem=home
+  - --talk-name=org.freedesktop.Notifications
+  - --talk-name=org.kde.StatusNotifierWatcher
+  - --filesystem=xdg-documents
+  - --filesystem=xdg-desktop
+modules:
+  - "python3-pycairo.json"
+  - "python3-PyGObject.json"
+  - "python3-legendary-gl.json"
