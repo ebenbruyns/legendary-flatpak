@@ -1,5 +1,5 @@
 app-id: com.github.derrod.legendary
-version: 0.20.33
+version: 0.20.34
 runtime: org.gnome.Platform
 runtime-version: "45"
 sdk: org.gnome.Sdk
@@ -12,6 +12,7 @@ finish-args: # flatpak permissions
   - --socket=wayland
   - --socket=pulseaudio
   - --filesystem=home
+  - --filesystem=/run/media
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.kde.StatusNotifierWatcher
   - --filesystem=xdg-documents
