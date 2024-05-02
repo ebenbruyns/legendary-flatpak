@@ -52,8 +52,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/9f/f7/b260e5bbf9b996adee1156125717656d415e38375ffe6828e1c48e2137ff/pywebview-5.1-py3-none-any.whl",
-            "sha256": "e352f587f82c173b28981fa0c893fab6124eb40d18c312e2bebf5346ab9f9f2c"
+            "url": "https://files.pythonhosted.org/packages/94/eb/fec1105c0e3b459266637bdc867bd064619eddb170dc0c9d12f20ad7690c/pywebview-4.4.1-py3-none-any.whl",
+            "sha256": "575b1362953349104b6ec08eed115c5a51d0d8b8e029b35335458cfa759ced1b"
         },
         {
             "type": "file",
