@@ -1,0 +1,14 @@
+{
+    "name": "python3-pypatch",
+    "buildsystem": "simple",
+    "build-commands": [
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pypatch\" --no-build-isolation"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/ad/05/fbd0c6cd10f7ce9b55d951ba81f22f7f7983212c1b54e172078b444d4190/pypatch-1.0.1.tar.gz",
+            "sha256": "ba16f7ef17a7e2c9d75fd7774367e4c5fddf40f3f69917d37af729ce940a7d87"
+        }
+    ]
+}

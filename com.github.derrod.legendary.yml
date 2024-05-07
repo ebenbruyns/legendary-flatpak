@@ -20,4 +20,5 @@ finish-args: # flatpak permissions
 modules:
   - "python3-pycairo.json"
   - "python3-PyGObject.json"
+  - "python3-pypatch.json"
   - "python3-legendary-gl.json"
