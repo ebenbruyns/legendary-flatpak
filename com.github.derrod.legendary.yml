@@ -1,7 +1,7 @@
 app-id: com.github.derrod.legendary
 version: 0.20.34
 runtime: org.gnome.Platform
-runtime-version: "45"
+runtime-version: "47"
 sdk: org.gnome.Sdk
 command: legendary
 finish-args: # flatpak permissions
@@ -20,5 +20,18 @@ finish-args: # flatpak permissions
 modules:
   - "python3-pycairo.json"
   - "python3-PyGObject.json"
-  - "python3-pypatch.json"
-  - "python3-legendary-gl.json"
+  # - "python3-pypatch.json"
+  # - "python3-pyinstaller.json"
+  - "python3-requests.json"
+  - "python3-filelock.json"
+  - "python3-altgraph.json"
+  - name: legendary
+
+    buildsystem: simple
+    build-commands:
+      - "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} . --no-build-isolation"
+    sources:
+      - type: git
+        url: https://github.com/ebenbruyns/legendary
+        commit: 15802e4e3392773ca4042a220ed682cda640d8c7
+
