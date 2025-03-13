@@ -1,7 +1,7 @@
 app-id: com.github.derrod.legendary
-version: 0.20.34
+version: "0.20.36"
 runtime: org.gnome.Platform
-runtime-version: "47"
+runtime-version: "45"
 sdk: org.gnome.Sdk
 command: legendary
 finish-args: # flatpak permissions
@@ -18,6 +18,9 @@ finish-args: # flatpak permissions
   - --filesystem=xdg-documents
   - --filesystem=xdg-desktop
 modules:
+  #- "python3-flit-core.json"
+  #- "python3-tomli.json"
+  #- "python3-meson-python.json"
   - "python3-pycairo.json"
   - "python3-PyGObject.json"
   # - "python3-pypatch.json"
@@ -25,6 +28,8 @@ modules:
   - "python3-requests.json"
   - "python3-filelock.json"
   - "python3-altgraph.json"
+  - "python3-pywebview.json"
+
   - name: legendary
 
     buildsystem: simple

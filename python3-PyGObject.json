@@ -12,8 +12,8 @@
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/2b/58/d34e67a79631177e3c08e7d02b5165147f590171f2cae6769502af5f7f7e/pygobject-3.50.0.tar.gz",
-            "sha256": "4500ad3dbf331773d8dedf7212544c999a76fc96b63a91b3dcac1e5925a1d103"
+            "url": "https://files.pythonhosted.org/packages/c2/e9/a79879b4e965eb58830228672fb5bada409b50e9435d4ecd01af10fdff03/pygobject-3.52.2.tar.gz",
+            "sha256": "869f42ee70dcf6de50bce267072e2c35cee7fcd2e32ea1af3a3a99a88901850a"
         }
     ]
 }
